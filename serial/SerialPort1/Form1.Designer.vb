@@ -228,11 +228,10 @@ Partial Class FormSerialPort
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSendData1.BackColor = System.Drawing.SystemColors.Window
         Me.txtSendData1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSendData1.Location = New System.Drawing.Point(248, 345)
-        Me.txtSendData1.Multiline = True
+        Me.txtSendData1.Location = New System.Drawing.Point(248, 359)
         Me.txtSendData1.Name = "txtSendData1"
         Me.txtSendData1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtSendData1.Size = New System.Drawing.Size(505, 30)
+        Me.txtSendData1.Size = New System.Drawing.Size(505, 21)
         Me.txtSendData1.TabIndex = 12
         '
         'txtReceive
@@ -250,7 +249,7 @@ Partial Class FormSerialPort
         Me.txtReceive.Name = "txtReceive"
         Me.txtReceive.ReadOnly = True
         Me.txtReceive.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtReceive.Size = New System.Drawing.Size(573, 316)
+        Me.txtReceive.Size = New System.Drawing.Size(573, 334)
         Me.txtReceive.TabIndex = 13
         '
         'btnSendData1
@@ -258,9 +257,9 @@ Partial Class FormSerialPort
         Me.btnSendData1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnSendData1.BackColor = System.Drawing.SystemColors.Menu
         Me.btnSendData1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnSendData1.Location = New System.Drawing.Point(173, 16)
+        Me.btnSendData1.Location = New System.Drawing.Point(765, 359)
         Me.btnSendData1.Name = "btnSendData1"
-        Me.btnSendData1.Size = New System.Drawing.Size(58, 30)
+        Me.btnSendData1.Size = New System.Drawing.Size(48, 22)
         Me.btnSendData1.TabIndex = 14
         Me.btnSendData1.Text = "发送1"
         Me.btnSendData1.UseVisualStyleBackColor = False
@@ -268,11 +267,11 @@ Partial Class FormSerialPort
         'btnSendData2
         '
         Me.btnSendData2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnSendData2.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnSendData2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.btnSendData2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnSendData2.Location = New System.Drawing.Point(172, 49)
+        Me.btnSendData2.Location = New System.Drawing.Point(765, 385)
         Me.btnSendData2.Name = "btnSendData2"
-        Me.btnSendData2.Size = New System.Drawing.Size(58, 30)
+        Me.btnSendData2.Size = New System.Drawing.Size(48, 23)
         Me.btnSendData2.TabIndex = 16
         Me.btnSendData2.Text = "发送2"
         Me.btnSendData2.UseVisualStyleBackColor = False
@@ -280,11 +279,11 @@ Partial Class FormSerialPort
         'btnSendData3
         '
         Me.btnSendData3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnSendData3.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnSendData3.BackColor = System.Drawing.SystemColors.Info
         Me.btnSendData3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnSendData3.Location = New System.Drawing.Point(172, 82)
+        Me.btnSendData3.Location = New System.Drawing.Point(765, 422)
         Me.btnSendData3.Name = "btnSendData3"
-        Me.btnSendData3.Size = New System.Drawing.Size(58, 30)
+        Me.btnSendData3.Size = New System.Drawing.Size(48, 30)
         Me.btnSendData3.TabIndex = 17
         Me.btnSendData3.Text = "发送3"
         Me.btnSendData3.UseVisualStyleBackColor = False
@@ -295,11 +294,10 @@ Partial Class FormSerialPort
         Me.txtSendData2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSendData2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSendData2.Location = New System.Drawing.Point(248, 378)
-        Me.txtSendData2.Multiline = True
+        Me.txtSendData2.Location = New System.Drawing.Point(248, 386)
         Me.txtSendData2.Name = "txtSendData2"
         Me.txtSendData2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtSendData2.Size = New System.Drawing.Size(505, 30)
+        Me.txtSendData2.Size = New System.Drawing.Size(505, 21)
         Me.txtSendData2.TabIndex = 18
         '
         'txtSendData3
@@ -308,11 +306,11 @@ Partial Class FormSerialPort
         Me.txtSendData3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSendData3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSendData3.Location = New System.Drawing.Point(248, 411)
+        Me.txtSendData3.Location = New System.Drawing.Point(248, 412)
         Me.txtSendData3.Multiline = True
         Me.txtSendData3.Name = "txtSendData3"
         Me.txtSendData3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtSendData3.Size = New System.Drawing.Size(505, 30)
+        Me.txtSendData3.Size = New System.Drawing.Size(505, 52)
         Me.txtSendData3.TabIndex = 19
         '
         'btnClear
@@ -473,7 +471,7 @@ Partial Class FormSerialPort
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label7.Location = New System.Drawing.Point(258, 330)
+        Me.Label7.Location = New System.Drawing.Point(252, 342)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(197, 12)
         Me.Label7.TabIndex = 38
@@ -661,9 +659,9 @@ Partial Class FormSerialPort
         Me.btnOpen1.BackColor = System.Drawing.SystemColors.Menu
         Me.btnOpen1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnOpen1.Font = New System.Drawing.Font("宋体", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnOpen1.Location = New System.Drawing.Point(759, 345)
+        Me.btnOpen1.Location = New System.Drawing.Point(177, 16)
         Me.btnOpen1.Name = "btnOpen1"
-        Me.btnOpen1.Size = New System.Drawing.Size(64, 30)
+        Me.btnOpen1.Size = New System.Drawing.Size(49, 26)
         Me.btnOpen1.TabIndex = 55
         Me.btnOpen1.Text = "打开"
         Me.btnOpen1.UseVisualStyleBackColor = False
@@ -678,9 +676,9 @@ Partial Class FormSerialPort
         Me.btnOpen2.BackColor = System.Drawing.SystemColors.Menu
         Me.btnOpen2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnOpen2.Font = New System.Drawing.Font("宋体", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnOpen2.Location = New System.Drawing.Point(759, 378)
+        Me.btnOpen2.Location = New System.Drawing.Point(177, 49)
         Me.btnOpen2.Name = "btnOpen2"
-        Me.btnOpen2.Size = New System.Drawing.Size(64, 30)
+        Me.btnOpen2.Size = New System.Drawing.Size(49, 28)
         Me.btnOpen2.TabIndex = 56
         Me.btnOpen2.Text = "打开"
         Me.btnOpen2.UseVisualStyleBackColor = False
@@ -691,9 +689,9 @@ Partial Class FormSerialPort
         Me.btnOpen3.BackColor = System.Drawing.SystemColors.Menu
         Me.btnOpen3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnOpen3.Font = New System.Drawing.Font("宋体", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnOpen3.Location = New System.Drawing.Point(759, 411)
+        Me.btnOpen3.Location = New System.Drawing.Point(178, 84)
         Me.btnOpen3.Name = "btnOpen3"
-        Me.btnOpen3.Size = New System.Drawing.Size(64, 30)
+        Me.btnOpen3.Size = New System.Drawing.Size(48, 27)
         Me.btnOpen3.TabIndex = 57
         Me.btnOpen3.Text = "打开"
         Me.btnOpen3.UseVisualStyleBackColor = False
@@ -727,13 +725,13 @@ Partial Class FormSerialPort
         Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.txtTimerSend2)
         Me.GroupBox1.Controls.Add(Me.btnClear3)
-        Me.GroupBox1.Controls.Add(Me.btnSendData1)
         Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.chxHexSend3)
-        Me.GroupBox1.Controls.Add(Me.btnSendData2)
         Me.GroupBox1.Controls.Add(Me.chxTimerSend2)
+        Me.GroupBox1.Controls.Add(Me.btnOpen3)
+        Me.GroupBox1.Controls.Add(Me.btnOpen1)
+        Me.GroupBox1.Controls.Add(Me.btnOpen2)
         Me.GroupBox1.Controls.Add(Me.chxTimerSend3)
-        Me.GroupBox1.Controls.Add(Me.btnSendData3)
         Me.GroupBox1.Controls.Add(Me.chxHexSend2)
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.btnClear1)
@@ -744,7 +742,7 @@ Partial Class FormSerialPort
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Controls.Add(Me.txtTimerSend1)
-        Me.GroupBox1.Location = New System.Drawing.Point(7, 329)
+        Me.GroupBox1.Location = New System.Drawing.Point(7, 347)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(235, 115)
         Me.GroupBox1.TabIndex = 68
@@ -761,7 +759,7 @@ Partial Class FormSerialPort
         Me.GroupBox2.Controls.Add(Me.btnParitySum2)
         Me.GroupBox2.Controls.Add(Me.btnParitySum1)
         Me.GroupBox2.Controls.Add(Me.txtFilter)
-        Me.GroupBox2.Location = New System.Drawing.Point(7, 258)
+        Me.GroupBox2.Location = New System.Drawing.Point(7, 276)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(235, 63)
         Me.GroupBox2.TabIndex = 69
@@ -894,7 +892,7 @@ Partial Class FormSerialPort
         Me.GroupBox4.Controls.Add(Me.btnStopDisplay)
         Me.GroupBox4.Location = New System.Drawing.Point(141, -4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(99, 256)
+        Me.GroupBox4.Size = New System.Drawing.Size(99, 259)
         Me.GroupBox4.TabIndex = 71
         Me.GroupBox4.TabStop = False
         '
@@ -903,17 +901,17 @@ Partial Class FormSerialPort
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.ClientSize = New System.Drawing.Size(835, 458)
+        Me.ClientSize = New System.Drawing.Size(835, 476)
         Me.Controls.Add(Me.txtReceive)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.btnSendData1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.btnOpen3)
-        Me.Controls.Add(Me.btnOpen2)
-        Me.Controls.Add(Me.btnOpen1)
+        Me.Controls.Add(Me.btnSendData2)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txtSendData3)
+        Me.Controls.Add(Me.btnSendData3)
         Me.Controls.Add(Me.txtSendData2)
         Me.Controls.Add(Me.txtSendData1)
         Me.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))

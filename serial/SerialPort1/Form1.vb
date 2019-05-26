@@ -601,4 +601,12 @@ Public Class FormSerialPort
     Private Sub Label20_Click(sender As Object, e As EventArgs) Handles Label20.Click
 
     End Sub
+
+    Private Sub TxtSendData1_TextChanged(sender As Object, e As EventArgs) Handles txtSendData1.TextChanged
+
+    End Sub
+
+    Private Sub ChxHexSend1_CheckedChanged(sender As Object, e As EventArgs) Handles chxHexSend1.CheckedChanged
+
+    End Sub
 End Class
