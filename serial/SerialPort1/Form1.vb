@@ -425,7 +425,7 @@ Public Class FormSerialPort
             .Filter = " Text Decuments (*.txt) | *.txt|All files (*.*)|*.*"
             .FilterIndex = 1
             .OverwritePrompt = True '覆盖原文件设置
-            .Title = "保存接收到的数据"
+            .Title = "保存接收数据"
         End With
         If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             Try
@@ -441,7 +441,7 @@ Public Class FormSerialPort
         With OpenFileDialog1
             .Filter = " Text Decuments (*.txt) | *.txt|All files (*.*)|*.*"
             .FilterIndex = 1
-            .Title = "请选择要要打开发送的文件"
+            .Title = "请选择要发送的文件"
         End With
         If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             Try
@@ -458,7 +458,7 @@ Public Class FormSerialPort
         With OpenFileDialog1
             .Filter = " Text Decuments (*.txt) | *.txt|All files (*.*)|*.*"
             .FilterIndex = 1
-            .Title = "请选择要要打开发送的文件"
+            .Title = "请选择要发送的文件"
         End With
         If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             Try
@@ -475,7 +475,7 @@ Public Class FormSerialPort
         With OpenFileDialog1
             .Filter = " Text Decuments (*.txt) | *.txt|All files (*.*)|*.*"
             .FilterIndex = 1
-            .Title = "请选择要要打开发送的文件"
+            .Title = "请选择要发送的文件"
         End With
         If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             Try
@@ -587,6 +587,18 @@ Public Class FormSerialPort
     End Sub
 
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub TxtReceive_TextChanged(sender As Object, e As EventArgs) Handles txtReceive.TextChanged
+
+    End Sub
+
+    Private Sub ChxHex_CheckedChanged(sender As Object, e As EventArgs) Handles chxHex.CheckedChanged
+
+    End Sub
+
+    Private Sub Label20_Click(sender As Object, e As EventArgs) Handles Label20.Click
 
     End Sub
 End Class

@@ -90,9 +90,9 @@ Partial Class FormSerialPort
         Me.btnParitySum2 = New System.Windows.Forms.Button()
         Me.btnParitySum1 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnFormExit = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -241,16 +241,16 @@ Partial Class FormSerialPort
         Me.txtReceive.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtReceive.BackColor = System.Drawing.Color.Black
+        Me.txtReceive.BackColor = System.Drawing.Color.White
         Me.txtReceive.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtReceive.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtReceive.ForeColor = System.Drawing.Color.White
+        Me.txtReceive.ForeColor = System.Drawing.Color.Black
         Me.txtReceive.Location = New System.Drawing.Point(250, 5)
         Me.txtReceive.Multiline = True
         Me.txtReceive.Name = "txtReceive"
         Me.txtReceive.ReadOnly = True
         Me.txtReceive.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtReceive.Size = New System.Drawing.Size(584, 316)
+        Me.txtReceive.Size = New System.Drawing.Size(573, 316)
         Me.txtReceive.TabIndex = 13
         '
         'btnSendData1
@@ -319,7 +319,7 @@ Partial Class FormSerialPort
         '
         Me.btnClear.BackColor = System.Drawing.SystemColors.Menu
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnClear.Location = New System.Drawing.Point(48, 229)
+        Me.btnClear.Location = New System.Drawing.Point(12, 216)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(67, 23)
         Me.btnClear.TabIndex = 23
@@ -331,11 +331,11 @@ Partial Class FormSerialPort
         Me.chxHex.AutoSize = True
         Me.chxHex.Checked = True
         Me.chxHex.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chxHex.Location = New System.Drawing.Point(6, 156)
+        Me.chxHex.Location = New System.Drawing.Point(6, 139)
         Me.chxHex.Name = "chxHex"
-        Me.chxHex.Size = New System.Drawing.Size(96, 16)
+        Me.chxHex.Size = New System.Drawing.Size(66, 16)
         Me.chxHex.TabIndex = 24
-        Me.chxHex.Text = "十六进制接收"
+        Me.chxHex.Text = "hex接收"
         Me.chxHex.UseVisualStyleBackColor = True
         '
         'btnClear1
@@ -366,7 +366,7 @@ Partial Class FormSerialPort
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 54)
+        Me.Label6.Location = New System.Drawing.Point(6, 8)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(41, 12)
         Me.Label6.TabIndex = 27
@@ -375,7 +375,7 @@ Partial Class FormSerialPort
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(9, 84)
+        Me.Label8.Location = New System.Drawing.Point(6, 38)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(41, 12)
         Me.Label8.TabIndex = 28
@@ -384,7 +384,7 @@ Partial Class FormSerialPort
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(7, 69)
+        Me.Label9.Location = New System.Drawing.Point(6, 23)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(41, 12)
         Me.Label9.TabIndex = 29
@@ -393,7 +393,7 @@ Partial Class FormSerialPort
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(7, 99)
+        Me.Label10.Location = New System.Drawing.Point(6, 53)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(41, 12)
         Me.Label10.TabIndex = 30
@@ -402,7 +402,7 @@ Partial Class FormSerialPort
         'lblSendFrames
         '
         Me.lblSendFrames.AutoSize = True
-        Me.lblSendFrames.Location = New System.Drawing.Point(47, 56)
+        Me.lblSendFrames.Location = New System.Drawing.Point(47, 10)
         Me.lblSendFrames.Name = "lblSendFrames"
         Me.lblSendFrames.Size = New System.Drawing.Size(11, 12)
         Me.lblSendFrames.TabIndex = 31
@@ -411,7 +411,7 @@ Partial Class FormSerialPort
         'lblSendBytes
         '
         Me.lblSendBytes.AutoSize = True
-        Me.lblSendBytes.Location = New System.Drawing.Point(47, 70)
+        Me.lblSendBytes.Location = New System.Drawing.Point(47, 24)
         Me.lblSendBytes.Name = "lblSendBytes"
         Me.lblSendBytes.Size = New System.Drawing.Size(11, 12)
         Me.lblSendBytes.TabIndex = 32
@@ -420,7 +420,7 @@ Partial Class FormSerialPort
         'lblReceiveFrames
         '
         Me.lblReceiveFrames.AutoSize = True
-        Me.lblReceiveFrames.Location = New System.Drawing.Point(47, 85)
+        Me.lblReceiveFrames.Location = New System.Drawing.Point(47, 37)
         Me.lblReceiveFrames.Name = "lblReceiveFrames"
         Me.lblReceiveFrames.Size = New System.Drawing.Size(11, 12)
         Me.lblReceiveFrames.TabIndex = 33
@@ -429,7 +429,7 @@ Partial Class FormSerialPort
         'lblReceiveBytes
         '
         Me.lblReceiveBytes.AutoSize = True
-        Me.lblReceiveBytes.Location = New System.Drawing.Point(47, 100)
+        Me.lblReceiveBytes.Location = New System.Drawing.Point(47, 52)
         Me.lblReceiveBytes.Name = "lblReceiveBytes"
         Me.lblReceiveBytes.Size = New System.Drawing.Size(11, 12)
         Me.lblReceiveBytes.TabIndex = 34
@@ -439,7 +439,7 @@ Partial Class FormSerialPort
         '
         Me.btnClearCount.BackColor = System.Drawing.SystemColors.Menu
         Me.btnClearCount.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnClearCount.Location = New System.Drawing.Point(6, 127)
+        Me.btnClearCount.Location = New System.Drawing.Point(9, 107)
         Me.btnClearCount.Name = "btnClearCount"
         Me.btnClearCount.Size = New System.Drawing.Size(42, 23)
         Me.btnClearCount.TabIndex = 35
@@ -450,7 +450,7 @@ Partial Class FormSerialPort
         '
         Me.btnStopDisplay.BackColor = System.Drawing.SystemColors.Menu
         Me.btnStopDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnStopDisplay.Location = New System.Drawing.Point(58, 127)
+        Me.btnStopDisplay.Location = New System.Drawing.Point(7, 76)
         Me.btnStopDisplay.Name = "btnStopDisplay"
         Me.btnStopDisplay.Size = New System.Drawing.Size(47, 23)
         Me.btnStopDisplay.TabIndex = 36
@@ -473,11 +473,11 @@ Partial Class FormSerialPort
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label7.Location = New System.Drawing.Point(248, 330)
+        Me.Label7.Location = New System.Drawing.Point(258, 330)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(251, 12)
+        Me.Label7.Size = New System.Drawing.Size(197, 12)
         Me.Label7.TabIndex = 38
-        Me.Label7.Text = "注:十六进制数据发送格式""FF FF FF... ...""."
+        Me.Label7.Text = "注:hex数据发送格式""FF FF FF...""."
         '
         'Label11
         '
@@ -648,9 +648,9 @@ Partial Class FormSerialPort
         '
         Me.btnSave.BackColor = System.Drawing.SystemColors.Menu
         Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnSave.Location = New System.Drawing.Point(6, 15)
+        Me.btnSave.Location = New System.Drawing.Point(12, 187)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(70, 23)
+        Me.btnSave.Size = New System.Drawing.Size(67, 23)
         Me.btnSave.TabIndex = 54
         Me.btnSave.Text = "保存数据"
         Me.btnSave.UseVisualStyleBackColor = False
@@ -661,9 +661,9 @@ Partial Class FormSerialPort
         Me.btnOpen1.BackColor = System.Drawing.SystemColors.Menu
         Me.btnOpen1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnOpen1.Font = New System.Drawing.Font("宋体", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnOpen1.Location = New System.Drawing.Point(770, 345)
+        Me.btnOpen1.Location = New System.Drawing.Point(759, 345)
         Me.btnOpen1.Name = "btnOpen1"
-        Me.btnOpen1.Size = New System.Drawing.Size(53, 30)
+        Me.btnOpen1.Size = New System.Drawing.Size(64, 30)
         Me.btnOpen1.TabIndex = 55
         Me.btnOpen1.Text = "打开"
         Me.btnOpen1.UseVisualStyleBackColor = False
@@ -678,9 +678,9 @@ Partial Class FormSerialPort
         Me.btnOpen2.BackColor = System.Drawing.SystemColors.Menu
         Me.btnOpen2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnOpen2.Font = New System.Drawing.Font("宋体", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnOpen2.Location = New System.Drawing.Point(770, 378)
+        Me.btnOpen2.Location = New System.Drawing.Point(759, 378)
         Me.btnOpen2.Name = "btnOpen2"
-        Me.btnOpen2.Size = New System.Drawing.Size(53, 30)
+        Me.btnOpen2.Size = New System.Drawing.Size(64, 30)
         Me.btnOpen2.TabIndex = 56
         Me.btnOpen2.Text = "打开"
         Me.btnOpen2.UseVisualStyleBackColor = False
@@ -691,9 +691,9 @@ Partial Class FormSerialPort
         Me.btnOpen3.BackColor = System.Drawing.SystemColors.Menu
         Me.btnOpen3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnOpen3.Font = New System.Drawing.Font("宋体", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnOpen3.Location = New System.Drawing.Point(770, 411)
+        Me.btnOpen3.Location = New System.Drawing.Point(759, 411)
         Me.btnOpen3.Name = "btnOpen3"
-        Me.btnOpen3.Size = New System.Drawing.Size(53, 30)
+        Me.btnOpen3.Size = New System.Drawing.Size(64, 30)
         Me.btnOpen3.TabIndex = 57
         Me.btnOpen3.Text = "打开"
         Me.btnOpen3.UseVisualStyleBackColor = False
@@ -703,11 +703,11 @@ Partial Class FormSerialPort
         Me.chxAutoClear.AutoSize = True
         Me.chxAutoClear.Checked = True
         Me.chxAutoClear.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chxAutoClear.Location = New System.Drawing.Point(8, 182)
+        Me.chxAutoClear.Location = New System.Drawing.Point(6, 165)
         Me.chxAutoClear.Name = "chxAutoClear"
-        Me.chxAutoClear.Size = New System.Drawing.Size(108, 16)
+        Me.chxAutoClear.Size = New System.Drawing.Size(72, 16)
         Me.chxAutoClear.TabIndex = 63
-        Me.chxAutoClear.Text = "自动清空接收区"
+        Me.chxAutoClear.Text = "自动清空"
         Me.chxAutoClear.UseVisualStyleBackColor = True
         '
         'txtFilter
@@ -836,7 +836,9 @@ Partial Class FormSerialPort
         '
         Me.GroupBox3.Controls.Add(Me.Label1)
         Me.GroupBox3.Controls.Add(Me.cbxComName)
+        Me.GroupBox3.Controls.Add(Me.btnFormExit)
         Me.GroupBox3.Controls.Add(Me.cbxBoudRate)
+        Me.GroupBox3.Controls.Add(Me.Button1)
         Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.cbxDataBits)
@@ -848,13 +850,36 @@ Partial Class FormSerialPort
         Me.GroupBox3.Controls.Add(Me.lblComStatus)
         Me.GroupBox3.Location = New System.Drawing.Point(5, -4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(117, 209)
+        Me.GroupBox3.Size = New System.Drawing.Size(129, 209)
         Me.GroupBox3.TabIndex = 70
         Me.GroupBox3.TabStop = False
+        '
+        'btnFormExit
+        '
+        Me.btnFormExit.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.btnFormExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnFormExit.Location = New System.Drawing.Point(7, 165)
+        Me.btnFormExit.Name = "btnFormExit"
+        Me.btnFormExit.Size = New System.Drawing.Size(42, 23)
+        Me.btnFormExit.TabIndex = 74
+        Me.btnFormExit.Text = "退出"
+        Me.btnFormExit.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.Menu
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Location = New System.Drawing.Point(59, 165)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(54, 23)
+        Me.Button1.TabIndex = 73
+        Me.Button1.Text = "关于"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.btnSave)
+        Me.GroupBox4.Controls.Add(Me.btnClear)
         Me.GroupBox4.Controls.Add(Me.chxHex)
         Me.GroupBox4.Controls.Add(Me.Label6)
         Me.GroupBox4.Controls.Add(Me.Label8)
@@ -867,44 +892,19 @@ Partial Class FormSerialPort
         Me.GroupBox4.Controls.Add(Me.lblReceiveBytes)
         Me.GroupBox4.Controls.Add(Me.btnClearCount)
         Me.GroupBox4.Controls.Add(Me.btnStopDisplay)
-        Me.GroupBox4.Location = New System.Drawing.Point(122, -4)
+        Me.GroupBox4.Location = New System.Drawing.Point(141, -4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(122, 209)
+        Me.GroupBox4.Size = New System.Drawing.Size(99, 256)
         Me.GroupBox4.TabIndex = 71
         Me.GroupBox4.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Location = New System.Drawing.Point(171, 229)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(70, 23)
-        Me.Button1.TabIndex = 73
-        Me.Button1.Text = "关于"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'btnFormExit
-        '
-        Me.btnFormExit.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.btnFormExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnFormExit.Location = New System.Drawing.Point(122, 229)
-        Me.btnFormExit.Name = "btnFormExit"
-        Me.btnFormExit.Size = New System.Drawing.Size(42, 23)
-        Me.btnFormExit.TabIndex = 74
-        Me.btnFormExit.Text = "退出"
-        Me.btnFormExit.UseVisualStyleBackColor = False
         '
         'FormSerialPort
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.LightSteelBlue
         Me.ClientSize = New System.Drawing.Size(835, 458)
         Me.Controls.Add(Me.txtReceive)
-        Me.Controls.Add(Me.btnClear)
-        Me.Controls.Add(Me.btnFormExit)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
