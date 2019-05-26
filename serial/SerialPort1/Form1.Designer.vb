@@ -23,76 +23,76 @@ Partial Class FormSerialPort
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormSerialPort))
-        Me.cbxComName = New System.Windows.Forms.ComboBox
-        Me.cbxBoudRate = New System.Windows.Forms.ComboBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.cbxDataBits = New System.Windows.Forms.ComboBox
-        Me.cbxParityBits = New System.Windows.Forms.ComboBox
-        Me.cbxStopBits = New System.Windows.Forms.ComboBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.btnOpenSerialPort = New System.Windows.Forms.Button
-        Me.lblComStatus = New System.Windows.Forms.Label
-        Me.txtSendData1 = New System.Windows.Forms.TextBox
-        Me.txtReceive = New System.Windows.Forms.TextBox
-        Me.btnSendData1 = New System.Windows.Forms.Button
-        Me.btnSendData2 = New System.Windows.Forms.Button
-        Me.btnSendData3 = New System.Windows.Forms.Button
-        Me.txtSendData2 = New System.Windows.Forms.TextBox
-        Me.txtSendData3 = New System.Windows.Forms.TextBox
-        Me.btnClear = New System.Windows.Forms.Button
-        Me.chxHex = New System.Windows.Forms.CheckBox
-        Me.btnClear1 = New System.Windows.Forms.Button
-        Me.chxHexSend1 = New System.Windows.Forms.CheckBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.lblSendFrames = New System.Windows.Forms.Label
-        Me.lblSendBytes = New System.Windows.Forms.Label
-        Me.lblReceiveFrames = New System.Windows.Forms.Label
-        Me.lblReceiveBytes = New System.Windows.Forms.Label
-        Me.btnClearCount = New System.Windows.Forms.Button
-        Me.btnStopDisplay = New System.Windows.Forms.Button
-        Me.chxTimerSend1 = New System.Windows.Forms.CheckBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.txtTimerSend1 = New System.Windows.Forms.TextBox
-        Me.Label12 = New System.Windows.Forms.Label
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.txtTimerSend2 = New System.Windows.Forms.TextBox
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.chxTimerSend2 = New System.Windows.Forms.CheckBox
-        Me.chxHexSend2 = New System.Windows.Forms.CheckBox
-        Me.btnClear2 = New System.Windows.Forms.Button
-        Me.Label15 = New System.Windows.Forms.Label
-        Me.txtTimerSend3 = New System.Windows.Forms.TextBox
-        Me.Label16 = New System.Windows.Forms.Label
-        Me.chxTimerSend3 = New System.Windows.Forms.CheckBox
-        Me.chxHexSend3 = New System.Windows.Forms.CheckBox
-        Me.btnClear3 = New System.Windows.Forms.Button
-        Me.btnSave = New System.Windows.Forms.Button
-        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog
-        Me.btnOpen1 = New System.Windows.Forms.Button
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog
-        Me.btnOpen2 = New System.Windows.Forms.Button
-        Me.btnOpen3 = New System.Windows.Forms.Button
-        Me.chxAutoClear = New System.Windows.Forms.CheckBox
-        Me.txtFilter = New System.Windows.Forms.TextBox
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.rabtnParitySumHLByte = New System.Windows.Forms.RadioButton
-        Me.rabtnParityLowByte = New System.Windows.Forms.RadioButton
-        Me.Label20 = New System.Windows.Forms.Label
-        Me.btnParitySum3 = New System.Windows.Forms.Button
-        Me.btnParitySum2 = New System.Windows.Forms.Button
-        Me.btnParitySum1 = New System.Windows.Forms.Button
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.btnFormExit = New System.Windows.Forms.Button
+        Me.cbxComName = New System.Windows.Forms.ComboBox()
+        Me.cbxBoudRate = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cbxDataBits = New System.Windows.Forms.ComboBox()
+        Me.cbxParityBits = New System.Windows.Forms.ComboBox()
+        Me.cbxStopBits = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.btnOpenSerialPort = New System.Windows.Forms.Button()
+        Me.lblComStatus = New System.Windows.Forms.Label()
+        Me.txtSendData1 = New System.Windows.Forms.TextBox()
+        Me.txtReceive = New System.Windows.Forms.TextBox()
+        Me.btnSendData1 = New System.Windows.Forms.Button()
+        Me.btnSendData2 = New System.Windows.Forms.Button()
+        Me.btnSendData3 = New System.Windows.Forms.Button()
+        Me.txtSendData2 = New System.Windows.Forms.TextBox()
+        Me.txtSendData3 = New System.Windows.Forms.TextBox()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.chxHex = New System.Windows.Forms.CheckBox()
+        Me.btnClear1 = New System.Windows.Forms.Button()
+        Me.chxHexSend1 = New System.Windows.Forms.CheckBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lblSendFrames = New System.Windows.Forms.Label()
+        Me.lblSendBytes = New System.Windows.Forms.Label()
+        Me.lblReceiveFrames = New System.Windows.Forms.Label()
+        Me.lblReceiveBytes = New System.Windows.Forms.Label()
+        Me.btnClearCount = New System.Windows.Forms.Button()
+        Me.btnStopDisplay = New System.Windows.Forms.Button()
+        Me.chxTimerSend1 = New System.Windows.Forms.CheckBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtTimerSend1 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.txtTimerSend2 = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.chxTimerSend2 = New System.Windows.Forms.CheckBox()
+        Me.chxHexSend2 = New System.Windows.Forms.CheckBox()
+        Me.btnClear2 = New System.Windows.Forms.Button()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.txtTimerSend3 = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.chxTimerSend3 = New System.Windows.Forms.CheckBox()
+        Me.chxHexSend3 = New System.Windows.Forms.CheckBox()
+        Me.btnClear3 = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.btnOpen1 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.btnOpen2 = New System.Windows.Forms.Button()
+        Me.btnOpen3 = New System.Windows.Forms.Button()
+        Me.chxAutoClear = New System.Windows.Forms.CheckBox()
+        Me.txtFilter = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.rabtnParitySumHLByte = New System.Windows.Forms.RadioButton()
+        Me.rabtnParityLowByte = New System.Windows.Forms.RadioButton()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.btnParitySum3 = New System.Windows.Forms.Button()
+        Me.btnParitySum2 = New System.Windows.Forms.Button()
+        Me.btnParitySum1 = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnFormExit = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -225,22 +225,22 @@ Partial Class FormSerialPort
         '
         Me.txtSendData1.AllowDrop = True
         Me.txtSendData1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSendData1.BackColor = System.Drawing.SystemColors.Window
         Me.txtSendData1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSendData1.Location = New System.Drawing.Point(248, 345)
         Me.txtSendData1.Multiline = True
         Me.txtSendData1.Name = "txtSendData1"
         Me.txtSendData1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtSendData1.Size = New System.Drawing.Size(463, 30)
+        Me.txtSendData1.Size = New System.Drawing.Size(505, 30)
         Me.txtSendData1.TabIndex = 12
         '
         'txtReceive
         '
         Me.txtReceive.AllowDrop = True
         Me.txtReceive.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtReceive.BackColor = System.Drawing.Color.Black
         Me.txtReceive.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtReceive.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -250,7 +250,7 @@ Partial Class FormSerialPort
         Me.txtReceive.Name = "txtReceive"
         Me.txtReceive.ReadOnly = True
         Me.txtReceive.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtReceive.Size = New System.Drawing.Size(488, 316)
+        Me.txtReceive.Size = New System.Drawing.Size(584, 316)
         Me.txtReceive.TabIndex = 13
         '
         'btnSendData1
@@ -293,33 +293,33 @@ Partial Class FormSerialPort
         '
         Me.txtSendData2.AllowDrop = True
         Me.txtSendData2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSendData2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSendData2.Location = New System.Drawing.Point(248, 378)
         Me.txtSendData2.Multiline = True
         Me.txtSendData2.Name = "txtSendData2"
         Me.txtSendData2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtSendData2.Size = New System.Drawing.Size(463, 30)
+        Me.txtSendData2.Size = New System.Drawing.Size(505, 30)
         Me.txtSendData2.TabIndex = 18
         '
         'txtSendData3
         '
         Me.txtSendData3.AllowDrop = True
         Me.txtSendData3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSendData3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSendData3.Location = New System.Drawing.Point(248, 411)
         Me.txtSendData3.Multiline = True
         Me.txtSendData3.Name = "txtSendData3"
         Me.txtSendData3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtSendData3.Size = New System.Drawing.Size(463, 30)
+        Me.txtSendData3.Size = New System.Drawing.Size(505, 30)
         Me.txtSendData3.TabIndex = 19
         '
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.SystemColors.Menu
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnClear.Location = New System.Drawing.Point(52, 10)
+        Me.btnClear.Location = New System.Drawing.Point(48, 229)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(67, 23)
         Me.btnClear.TabIndex = 23
@@ -331,7 +331,7 @@ Partial Class FormSerialPort
         Me.chxHex.AutoSize = True
         Me.chxHex.Checked = True
         Me.chxHex.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chxHex.Location = New System.Drawing.Point(8, 36)
+        Me.chxHex.Location = New System.Drawing.Point(6, 156)
         Me.chxHex.Name = "chxHex"
         Me.chxHex.Size = New System.Drawing.Size(96, 16)
         Me.chxHex.TabIndex = 24
@@ -375,7 +375,7 @@ Partial Class FormSerialPort
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(7, 84)
+        Me.Label8.Location = New System.Drawing.Point(9, 84)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(41, 12)
         Me.Label8.TabIndex = 28
@@ -439,7 +439,7 @@ Partial Class FormSerialPort
         '
         Me.btnClearCount.BackColor = System.Drawing.SystemColors.Menu
         Me.btnClearCount.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnClearCount.Location = New System.Drawing.Point(6, 115)
+        Me.btnClearCount.Location = New System.Drawing.Point(6, 127)
         Me.btnClearCount.Name = "btnClearCount"
         Me.btnClearCount.Size = New System.Drawing.Size(42, 23)
         Me.btnClearCount.TabIndex = 35
@@ -450,7 +450,7 @@ Partial Class FormSerialPort
         '
         Me.btnStopDisplay.BackColor = System.Drawing.SystemColors.Menu
         Me.btnStopDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnStopDisplay.Location = New System.Drawing.Point(5, 10)
+        Me.btnStopDisplay.Location = New System.Drawing.Point(58, 127)
         Me.btnStopDisplay.Name = "btnStopDisplay"
         Me.btnStopDisplay.Size = New System.Drawing.Size(47, 23)
         Me.btnStopDisplay.TabIndex = 36
@@ -648,7 +648,7 @@ Partial Class FormSerialPort
         '
         Me.btnSave.BackColor = System.Drawing.SystemColors.Menu
         Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnSave.Location = New System.Drawing.Point(49, 115)
+        Me.btnSave.Location = New System.Drawing.Point(6, 15)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(70, 23)
         Me.btnSave.TabIndex = 54
@@ -661,9 +661,9 @@ Partial Class FormSerialPort
         Me.btnOpen1.BackColor = System.Drawing.SystemColors.Menu
         Me.btnOpen1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnOpen1.Font = New System.Drawing.Font("宋体", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnOpen1.Location = New System.Drawing.Point(717, 345)
+        Me.btnOpen1.Location = New System.Drawing.Point(770, 345)
         Me.btnOpen1.Name = "btnOpen1"
-        Me.btnOpen1.Size = New System.Drawing.Size(21, 30)
+        Me.btnOpen1.Size = New System.Drawing.Size(53, 30)
         Me.btnOpen1.TabIndex = 55
         Me.btnOpen1.Text = "打开"
         Me.btnOpen1.UseVisualStyleBackColor = False
@@ -678,9 +678,9 @@ Partial Class FormSerialPort
         Me.btnOpen2.BackColor = System.Drawing.SystemColors.Menu
         Me.btnOpen2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnOpen2.Font = New System.Drawing.Font("宋体", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnOpen2.Location = New System.Drawing.Point(717, 378)
+        Me.btnOpen2.Location = New System.Drawing.Point(770, 378)
         Me.btnOpen2.Name = "btnOpen2"
-        Me.btnOpen2.Size = New System.Drawing.Size(21, 30)
+        Me.btnOpen2.Size = New System.Drawing.Size(53, 30)
         Me.btnOpen2.TabIndex = 56
         Me.btnOpen2.Text = "打开"
         Me.btnOpen2.UseVisualStyleBackColor = False
@@ -691,9 +691,9 @@ Partial Class FormSerialPort
         Me.btnOpen3.BackColor = System.Drawing.SystemColors.Menu
         Me.btnOpen3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnOpen3.Font = New System.Drawing.Font("宋体", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnOpen3.Location = New System.Drawing.Point(717, 411)
+        Me.btnOpen3.Location = New System.Drawing.Point(770, 411)
         Me.btnOpen3.Name = "btnOpen3"
-        Me.btnOpen3.Size = New System.Drawing.Size(21, 30)
+        Me.btnOpen3.Size = New System.Drawing.Size(53, 30)
         Me.btnOpen3.TabIndex = 57
         Me.btnOpen3.Text = "打开"
         Me.btnOpen3.UseVisualStyleBackColor = False
@@ -703,7 +703,7 @@ Partial Class FormSerialPort
         Me.chxAutoClear.AutoSize = True
         Me.chxAutoClear.Checked = True
         Me.chxAutoClear.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chxAutoClear.Location = New System.Drawing.Point(8, 141)
+        Me.chxAutoClear.Location = New System.Drawing.Point(8, 182)
         Me.chxAutoClear.Name = "chxAutoClear"
         Me.chxAutoClear.Size = New System.Drawing.Size(108, 16)
         Me.chxAutoClear.TabIndex = 63
@@ -848,14 +848,13 @@ Partial Class FormSerialPort
         Me.GroupBox3.Controls.Add(Me.lblComStatus)
         Me.GroupBox3.Location = New System.Drawing.Point(5, -4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(117, 161)
+        Me.GroupBox3.Size = New System.Drawing.Size(117, 209)
         Me.GroupBox3.TabIndex = 70
         Me.GroupBox3.TabStop = False
         '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.btnSave)
-        Me.GroupBox4.Controls.Add(Me.btnClear)
         Me.GroupBox4.Controls.Add(Me.chxHex)
         Me.GroupBox4.Controls.Add(Me.Label6)
         Me.GroupBox4.Controls.Add(Me.Label8)
@@ -870,7 +869,7 @@ Partial Class FormSerialPort
         Me.GroupBox4.Controls.Add(Me.btnStopDisplay)
         Me.GroupBox4.Location = New System.Drawing.Point(122, -4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(122, 161)
+        Me.GroupBox4.Size = New System.Drawing.Size(122, 209)
         Me.GroupBox4.TabIndex = 71
         Me.GroupBox4.TabStop = False
         '
@@ -878,18 +877,18 @@ Partial Class FormSerialPort
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.Menu
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Location = New System.Drawing.Point(170, 162)
+        Me.Button1.Location = New System.Drawing.Point(171, 229)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(70, 23)
         Me.Button1.TabIndex = 73
-        Me.Button1.Text = "关于软件"
+        Me.Button1.Text = "关于"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'btnFormExit
         '
         Me.btnFormExit.BackColor = System.Drawing.SystemColors.ScrollBar
         Me.btnFormExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnFormExit.Location = New System.Drawing.Point(127, 162)
+        Me.btnFormExit.Location = New System.Drawing.Point(122, 229)
         Me.btnFormExit.Name = "btnFormExit"
         Me.btnFormExit.Size = New System.Drawing.Size(42, 23)
         Me.btnFormExit.TabIndex = 74
@@ -901,8 +900,9 @@ Partial Class FormSerialPort
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(750, 458)
+        Me.ClientSize = New System.Drawing.Size(835, 458)
         Me.Controls.Add(Me.txtReceive)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnFormExit)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox4)
@@ -920,7 +920,7 @@ Partial Class FormSerialPort
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormSerialPort"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "阿猫基础串口调试助手 源代码第一部分学习 可直接运行 添加删除功能 学习交流群：233166920 作者：阿猫"
+        Me.Text = "Q Serial"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
