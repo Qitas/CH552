@@ -39,7 +39,7 @@
 
 
         <!--串口配置面板-->
-        <Border x:Name="serialSettingBorder" BorderBrush="#FFC5BCBC" BorderThickness="1" Padding="2,2,2,2" Margin="5,5,5,0" Grid.Row="0" Grid.Column="0"  VerticalAlignment="Top" Height="215" Background="#0044C76E"  >
+        <Border x:Name="serialSettingBorder" BorderBrush="#FFC5BCBC" BorderThickness="1" Padding="2,2,2,2" Margin="5,5,5,0" Grid.Row="0" Grid.Column="0"  VerticalAlignment="Top" Height="215" Background="#FF44C76E"  >
 
             <Grid >
                 <Grid.RowDefinitions>
@@ -107,7 +107,7 @@
         </Border>
 
         <!--串口接收面板-->
-        <Border BorderBrush="#FF0000BC"  BorderThickness="1" Padding="2,2,2,2" Margin="5,224,5,0" Grid.Column="0"  Grid.Row="0" Height="112" VerticalAlignment="Top" Background="#0044C76E" >
+        <Border BorderBrush="#FFC5BCBC"  BorderThickness="1" Padding="2,2,2,2" Margin="5,224,5,0" Grid.Column="0"  Grid.Row="0" Height="112" VerticalAlignment="Top" Background="#FF44C76E" >
             <Grid Height="107" VerticalAlignment="Top" Margin="-3,0,0,0" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="43*"/>
@@ -127,7 +127,7 @@
         </Border>
 
         <!--串口发送面板-->
-        <Border Name="sendControlBorder"  BorderBrush="#FFFFBCBC" BorderThickness="1" Padding="2,2,2,2" Margin="5,0,5,6" Grid.Column="0" Height="185" VerticalAlignment="Bottom" Grid.Row="1" Background="#00FFC162" >
+        <Border Name="sendControlBorder"  BorderBrush="#FFC5BCBC" BorderThickness="1" Padding="2,2,2,2" Margin="5,0,5,6" Grid.Column="0" Height="185" VerticalAlignment="Bottom" Grid.Row="1" Background="#FFFFC162" >
             <Grid Margin="0,0,0,0" Height="180" VerticalAlignment="Top" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
@@ -169,7 +169,7 @@
 
         <!--接收文本窗口-->
         <ScrollViewer x:Name="receiveScrollViewer"   Grid.Column="1" HorizontalAlignment="Stretch" Margin="5,5,5,5"   Grid.Row="0"  VerticalAlignment="Stretch"  >
-            <TextBox  x:Name="receiveTextBox"   Foreground="Black" Background="White" IsReadOnly="True"  TextChanged="ReceiveTextBox_TextChanged" TextWrapping="Wrap" TextAlignment="Left"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="宋体" FontSize="15" Width="574" >
+            <TextBox  x:Name="receiveTextBox"  Foreground="White" Background="Black" IsReadOnly="True"  TextChanged="ReceiveTextBox_TextChanged" TextWrapping="Wrap" TextAlignment="Left"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="宋体" FontSize="15" >
 
             </TextBox>
             <ScrollViewer.ToolTip>
@@ -180,7 +180,7 @@
 
         <!--发送文本窗口-->
         <ScrollViewer Grid.Column="1" HorizontalAlignment="Stretch" Margin="5,5,5,5" Grid.Row="1"  VerticalAlignment="Stretch">
-            <TextBox  x:Name="sendTextBox"  Foreground="Black" Background="White" PreviewTextInput="SendTextBox_PreviewTextInput"  AcceptsReturn="True"  TextWrapping="Wrap"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="宋体" FontSize="15">
+            <TextBox  x:Name="sendTextBox"  Foreground="White" Background="Black" PreviewTextInput="SendTextBox_PreviewTextInput"  AcceptsReturn="True"  TextWrapping="Wrap"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="宋体" FontSize="15">
 
             </TextBox>
             <ScrollViewer.ToolTip>
@@ -211,7 +211,7 @@
             <TextBlock Name="statusSendByteTextBlock" HorizontalAlignment="Stretch" Foreground="Blue"   Grid.Column="4" Margin="5,3,5,0"></TextBlock>
 
             <!--计数清零按钮-->
-            <Button Name="countClearButton" Click="countClearButton_Click" Content="计数清零" Grid.Column="5" HorizontalAlignment="Right" Margin="5,0,5,0" RenderTransformOrigin="-6.692,0.4"  />
+            <Button Name="countClearButton" Click="countClearButton_Click" Content="计数清零" Grid.Column="5" HorizontalAlignment="Right" Margin="5,0,5,0"  />
 
 
 

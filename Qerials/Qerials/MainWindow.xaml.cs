@@ -57,17 +57,7 @@ namespace wildfire_MultiFuctionalSerial_assistant
             }
         }
 
-        private void SerialBasic_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void GSMAssistant_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void GPSMap_Loaded(object sender, RoutedEventArgs e)
+        private void Fourm_Loaded(object sender, RoutedEventArgs e)
         {
 
         }

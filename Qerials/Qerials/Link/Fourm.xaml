@@ -8,12 +8,8 @@
     <Grid>
         <TabControl TabStripPlacement="Left"  >
 
-
-
-
-
-            <TabItem Header="Q taobao">
-                <Frame Navigating="CommondFrame_Navigating" NavigationFailed="CommondFrame_NavigationFailed" Source="https://firestm32.taobao.com/" >
+            <TabItem Header="硬件产品">
+                <Frame Navigating="CommondFrame_Navigating" NavigationFailed="CommondFrame_NavigationFailed" Source="https://shop562718807.taobao.com/" >
 
                 </Frame>
             </TabItem>
