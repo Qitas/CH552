@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 
-namespace wildfire_MultiFuctionalSerial_assistant
+namespace Qerials
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
@@ -35,18 +35,18 @@ namespace wildfire_MultiFuctionalSerial_assistant
                 softWareMainWindow.Width = 1250;
                 softWareMainWindow.Height = 680;
 
-                //GPSItem.Content = new wildfire_MultiFuctionalSerial_assistant.SerialBasic(); 
+                //GPSItem.Content = new Qerials.SerialBasic(); 
 
-            
-               
+
+
             }
             else if (functionTabControl.SelectedIndex == 3  )
             {
                 softWareMainWindow.Width = 1250;
                 softWareMainWindow.Height = 680;
 
-                //FourmItem.Content = new wildfire_MultiFuctionalSerial_assistant.GPSMap();
-               
+                //FourmItem.Content = new Qerials.GPSMap();
+
 
 
             }
@@ -58,6 +58,11 @@ namespace wildfire_MultiFuctionalSerial_assistant
         }
 
         private void Fourm_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SerialBasic_Loaded(object sender, RoutedEventArgs e)
         {
 
         }

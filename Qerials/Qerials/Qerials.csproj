@@ -56,6 +56,10 @@
   <PropertyGroup>
     <ApplicationIcon>image.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -76,19 +80,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Link\Fourm.xaml.cs">
+    <Compile Include="Links\Fourm.xaml.cs">
       <DependentUpon>Fourm.xaml</DependentUpon>
     </Compile>
     <Compile Include="GPS\GPSMap.xaml.cs">
       <DependentUpon>GPSMap.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GSMFunction\GSMAssistant.xaml.cs">
+    <Compile Include="GSM\GSMAssistant.xaml.cs">
       <DependentUpon>GSMAssistant.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SerialBasic\SerialBasic.xaml.cs">
+    <Compile Include="Serial\SerialBasic.xaml.cs">
       <DependentUpon>SerialBasic.xaml</DependentUpon>
     </Compile>
-    <Page Include="Link\Fourm.xaml">
+    <Page Include="Links\Fourm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -96,7 +100,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="GSMFunction\GSMAssistant.xaml">
+    <Page Include="GSM\GSMAssistant.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,7 +116,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="SerialBasic\SerialBasic.xaml">
+    <Page Include="Serial\SerialBasic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

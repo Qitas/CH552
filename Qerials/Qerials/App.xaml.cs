@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace wildfire_MultiFuctionalSerial_assistant
+namespace Qerials
 {
     /// <summary>
     /// App.xaml 的交互逻辑
