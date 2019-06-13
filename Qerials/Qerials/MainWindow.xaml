@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:MultiFunction="clr-namespace:Qerials"
      
-        Title="多功能调试助手V0.1" Name="softWareMainWindow" Width="810" Height="640" MinWidth="810"  MinHeight="640">
+        Title="Qerials调试助手" Name="softWareMainWindow" Width="810" Height="640" MinWidth="810"  MinHeight="640">
     <Grid >
         <TabControl Name="functionTabControl" SelectionChanged="FunctionTabControl_SelectionChanged">
             <TabItem Header="串口调试功能">

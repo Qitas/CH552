@@ -39,7 +39,7 @@
 
 
         <!--串口配置面板-->
-        <Border x:Name="serialSettingBorder" BorderBrush="#FFC5BCBC" BorderThickness="1" Padding="2,2,2,2" Margin="5,5,5,0" Grid.Row="0" Grid.Column="0"  VerticalAlignment="Top" Height="215" Background="#FF44C76E"  >
+        <Border x:Name="serialSettingBorder" BorderBrush="#FFFFBCBC" BorderThickness="1" Padding="2,2,2,2" Margin="5,5,5,0" Grid.Row="0" Grid.Column="0"  VerticalAlignment="Top" Height="215" Background="#0044C76E"  >
 
             <Grid >
                 <Grid.RowDefinitions>
@@ -107,7 +107,7 @@
         </Border>
 
         <!--串口接收面板-->
-        <Border BorderBrush="#FFC5BCBC"  BorderThickness="1" Padding="2,2,2,2" Margin="5,224,5,0" Grid.Column="0"  Grid.Row="0" Height="112" VerticalAlignment="Top" Background="#FF44C76E" >
+        <Border BorderBrush="#FFFFBCBC"  BorderThickness="1" Padding="2,2,2,2" Margin="5,224,5,5" Grid.Column="0"  Grid.Row="0" Background="#0044C76E" >
             <Grid Height="107" VerticalAlignment="Top" Margin="-3,0,0,0" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="43*"/>
@@ -127,7 +127,7 @@
         </Border>
 
         <!--串口发送面板-->
-        <Border Name="sendControlBorder"  BorderBrush="#FFC5BCBC" BorderThickness="1" Padding="2,2,2,2" Margin="5,0,5,6" Grid.Column="0" Height="185" VerticalAlignment="Bottom" Grid.Row="1" Background="#FFFFC162" >
+        <Border Name="sendControlBorder"  BorderBrush="#FFFFBCBC" BorderThickness="1" Padding="2,2,2,2" Margin="5,0,5,6" Grid.Column="0" Height="188" VerticalAlignment="Bottom" Grid.Row="1" Background="#00FFC162" >
             <Grid Margin="0,0,0,0" Height="180" VerticalAlignment="Top" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
@@ -143,8 +143,8 @@
 
                 </Grid.ColumnDefinitions>
 
-                <CheckBox x:Name="autoSendCheckBox" Unchecked="AutoSendCheckBox_Unchecked" Checked="AutoSendCheckBox_Checked" Content="自动发送" HorizontalAlignment="Left" Margin="18,10,0,0" Grid.Row="1" Width="65" Height="26" VerticalAlignment="Top" Grid.RowSpan="2"/>
-                <CheckBox x:Name="hexadecimalSendCheckBox" Content="十六进制发送" Grid.Column="1" HorizontalAlignment="Left" Margin="8,10,0,0" Grid.Row="1" Width="89" Height="18" VerticalAlignment="Top"/>
+                <CheckBox x:Name="autoSendCheckBox" Unchecked="AutoSendCheckBox_Unchecked" Checked="AutoSendCheckBox_Checked" Content="自动发送" HorizontalAlignment="Left" Margin="18,14,0,0" Grid.Row="1" Width="79" Height="18" VerticalAlignment="Top"/>
+                <CheckBox x:Name="hexadecimalSendCheckBox" Content="十六进制发送" Grid.Column="1" HorizontalAlignment="Left" Margin="3,14,0,0" Grid.Row="1" Width="102" Height="18" VerticalAlignment="Top"/>
                 <Label Content="自动发送周期" HorizontalAlignment="Left" Margin="10,9,0,0" Width="82" Height="26" VerticalAlignment="Top" Grid.RowSpan="2"/>
 
                 <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Height="35" VerticalAlignment="Top" Grid.RowSpan="2">
@@ -160,8 +160,8 @@
                     </Button.ToolTip>
                 </Button>
                 <Button Content="加载文件" Command="Open" HorizontalAlignment="Left" Margin="8,4,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Height="22"/>
-                <TextBox x:Name="fileNameTextBox" IsReadOnly="True" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="63,10,0,0" Text ="还没选择要发送的文件" Grid.Row="4"  Width="130"  Height="23" VerticalAlignment="Top"/>
-                <Label Content="文件路径" HorizontalAlignment="Left" Margin="5,7,0,0" Grid.Row="4" VerticalAlignment="Top" Height="26" Width="58"/>
+                <TextBox x:Name="fileNameTextBox" IsReadOnly="True" Grid.ColumnSpan="2" Margin="63,10,0,0" Text =" 选择发送的文件" Grid.Row="4"  Height="23" VerticalAlignment="Top" TextChanged="FileNameTextBox_TextChanged"/>
+                <Label Content="发送文件" HorizontalAlignment="Left" Margin="5,10,0,0" Grid.Row="4" VerticalAlignment="Top" Height="23" Width="58"/>
 
             </Grid>
         </Border>
@@ -169,7 +169,7 @@
 
         <!--接收文本窗口-->
         <ScrollViewer x:Name="receiveScrollViewer"   Grid.Column="1" HorizontalAlignment="Stretch" Margin="5,5,5,5"   Grid.Row="0"  VerticalAlignment="Stretch"  >
-            <TextBox  x:Name="receiveTextBox"  Foreground="White" Background="Black" IsReadOnly="True"  TextChanged="ReceiveTextBox_TextChanged" TextWrapping="Wrap" TextAlignment="Left"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="宋体" FontSize="15" >
+            <TextBox  x:Name="receiveTextBox"  Foreground="Black" Background="White" IsReadOnly="True"  TextChanged="ReceiveTextBox_TextChanged" TextWrapping="Wrap" TextAlignment="Left"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="宋体" FontSize="15" >
 
             </TextBox>
             <ScrollViewer.ToolTip>
@@ -180,7 +180,7 @@
 
         <!--发送文本窗口-->
         <ScrollViewer Grid.Column="1" HorizontalAlignment="Stretch" Margin="5,5,5,5" Grid.Row="1"  VerticalAlignment="Stretch">
-            <TextBox  x:Name="sendTextBox"  Foreground="White" Background="Black" PreviewTextInput="SendTextBox_PreviewTextInput"  AcceptsReturn="True"  TextWrapping="Wrap"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="宋体" FontSize="15">
+            <TextBox  x:Name="sendTextBox"  Foreground="Black" Background="White" PreviewTextInput="SendTextBox_PreviewTextInput"  AcceptsReturn="True"  TextWrapping="Wrap"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="宋体" FontSize="15">
 
             </TextBox>
             <ScrollViewer.ToolTip>
@@ -203,15 +203,15 @@
             <TextBlock HorizontalAlignment="Stretch" Name="statusTextBlock" Foreground="Red" Grid.Column="0" ></TextBlock>
 
             <!--接收字节数-->
-            <Label HorizontalAlignment="Right" Padding="0,0,0,0" Grid.Column="1" Width="72" Margin="5,3,5,0">接收字节数：</Label>
-            <TextBlock Name="statusReceiveByteTextBlock" HorizontalAlignment="Stretch" Foreground="Blue"  Grid.Column="2" Margin="5,3,5,0" ></TextBlock>
+            <Label HorizontalAlignment="Right" Padding="0,0,0,0" Width="65" Margin="0,3,40,5" Grid.ColumnSpan="2">接收字节数：</Label>
+            <TextBlock Name="statusReceiveByteTextBlock" Foreground="Blue"  Grid.Column="1" Margin="55,3,38,5" Grid.ColumnSpan="2" />
 
             <!--发送字节数-->
-            <Label HorizontalAlignment="Right" Padding="0,0,0,0" Width="72" Grid.Column="3" Margin="5,3,5,0">发送字节数：</Label>
-            <TextBlock Name="statusSendByteTextBlock" HorizontalAlignment="Stretch" Foreground="Blue"   Grid.Column="4" Margin="5,3,5,0"></TextBlock>
+            <Label Padding="0,0,0,0" Grid.Column="2" Margin="20,3,40,5" Grid.ColumnSpan="2">发送字节数：</Label>
+            <TextBlock Name="statusSendByteTextBlock" HorizontalAlignment="Stretch" Foreground="Blue"   Grid.Column="3" Margin="50,3,25,5" Grid.ColumnSpan="2"/>
 
             <!--计数清零按钮-->
-            <Button Name="countClearButton" Click="countClearButton_Click" Content="计数清零" Grid.Column="5" HorizontalAlignment="Right" Margin="5,0,5,0"  />
+            <Button Name="countClearButton" Click="countClearButton_Click" Content="计数清零" Grid.Column="5" Margin="2,1,20,5"  />
 
 
 

@@ -40,7 +40,7 @@
 
 
         <!--串口配置面板-->
-        <Border x:Name="serialSettingBorder" Background="#FF44C76E" BorderBrush="#FFC5BCBC" BorderThickness="1" Padding="2,2,2,2" Margin="5,5,5,0" Grid.Row="0" Grid.Column="0"  VerticalAlignment="Top" Height="215"  >
+        <Border x:Name="serialSettingBorder" Background="#0044C76E" BorderBrush="#FFC5BCBC" BorderThickness="1" Padding="2,2,2,2" Margin="5,5,5,0" Grid.Row="0" Grid.Column="0"  VerticalAlignment="Top" Height="215"  >
 
             <Grid >
                 <Grid.RowDefinitions>
@@ -108,7 +108,7 @@
         </Border>
 
         <!--串口接收面板-->
-        <Border BorderBrush="#FFC5BCBC" Background="#FF44C76E" BorderThickness="1" Padding="2,2,2,2" Margin="5,224,5,0" Grid.Column="0"  Grid.Row="0" Height="112" VerticalAlignment="Top" >
+        <Border BorderBrush="#FAA5BCBC" Background="#0044C76E" BorderThickness="1" Padding="2,2,2,2" Margin="5,224,5,0" Grid.Column="0"  Grid.Row="0" Height="112" VerticalAlignment="Top" >
             <Grid Height="107" VerticalAlignment="Top" Margin="-3,0,0,0" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="43*"/>
@@ -137,7 +137,7 @@
                         <ColumnDefinition Width="260*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Grid Grid.Column="0" Grid.Row="0" Background="#FFFFC162">
+                    <Grid Grid.Column="0" Grid.Row="0" Background="#00FFC162">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="64*"></ColumnDefinition>
                             <ColumnDefinition Width="64*"></ColumnDefinition>
@@ -170,7 +170,7 @@
 
                     </Grid>
 
-                    <Grid Grid.Column="1" Background="#FFFFC162">
+                    <Grid Grid.Column="1" Background="#00FFC162">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="99*"></ColumnDefinition>
                             <ColumnDefinition Width="101*"/>
@@ -201,7 +201,7 @@
 
 
             <TabItem Header="手动发送">
-          
+
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="220"></ColumnDefinition>
@@ -255,7 +255,7 @@
 
         <!--接收文本窗口-->
         <ScrollViewer x:Name="receiveScrollViewer"   Grid.Column="1" HorizontalAlignment="Stretch" Margin="5,5,0,5"   Grid.Row="0"  VerticalAlignment="Stretch" Grid.ColumnSpan="2"  >
-            <TextBox  x:Name="receiveTextBox"  Foreground="White" Background="Black" IsReadOnly="True"  TextChanged="ReceiveTextBox_TextChanged" TextWrapping="Wrap" TextAlignment="Left"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="宋体" FontSize="15" >
+            <TextBox  x:Name="receiveTextBox"  Background="White" Foreground="Black" IsReadOnly="True"  TextChanged="ReceiveTextBox_TextChanged" TextWrapping="Wrap" TextAlignment="Left"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="宋体" FontSize="15" >
 
             </TextBox>
 
@@ -295,9 +295,9 @@
 
         </Grid>
         <ScrollViewer  Grid.Column="2" HorizontalAlignment="Stretch" Margin="0,56,0,3" VerticalAlignment="Stretch" Grid.Row="1">
-            <TextBlock Name ="commandNoteTextBlock"  Padding="5,5,5,5" Text="打开串口后，把鼠标移动到功能按键上即可查看说明。"  Foreground="Blue"  TextWrapping="Wrap" Background="#FFFFFFC0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+            <TextBlock Name ="commandNoteTextBlock"  Padding="5,5,5,5" Text="打开串口后，把鼠标移动到功能按键上即可查看说明。"  Foreground="Blue"  TextWrapping="Wrap" Background="#00FFFFC0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="129"  />
         </ScrollViewer>
-        <Label Content="帮助说明：" Grid.Column="2" HorizontalAlignment="Left" Margin="0,25,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="帮助说明：" Grid.Column="1" HorizontalAlignment="Left" Margin="338,30,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="70" Grid.ColumnSpan="2"/>
 
 
     </Grid>

@@ -37,7 +37,7 @@
 
         <!--接收文本窗口-->
         <ScrollViewer x:Name="receiveScrollViewer"  Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,0,5,3"   Grid.Row="1"  VerticalAlignment="Bottom"  Height="149"  >
-            <TextBox  x:Name="receiveTextBox"  Foreground="White" Background="Black" IsReadOnly="True"  TextChanged="ReceiveTextBox_TextChanged" TextWrapping="Wrap" TextAlignment="Left"   FontFamily="宋体" FontSize="15"  >
+            <TextBox  x:Name="receiveTextBox"  Background="White" Foreground="Black" IsReadOnly="True"  TextChanged="ReceiveTextBox_TextChanged" TextWrapping="Wrap" TextAlignment="Left"   FontFamily="宋体" FontSize="15"  >
 
             </TextBox>
 
@@ -80,7 +80,7 @@
         <TabControl Name="gpsInfoTabControl" HorizontalAlignment="Left"  Margin="5,5,5,5" VerticalAlignment="Stretch" Width="238" Grid.RowSpan="2" >
             <TabItem Header="控制面板">
                 <Grid Margin="0,0,-5,1"  VerticalAlignment="Top" Height="377" HorizontalAlignment="Left" Width="233">
-                    <Border x:Name="serialSettingBorder" BorderBrush="#FFC5BCBC" BorderThickness="1" Padding="2,2,2,2" Margin="0,0,5,160" Grid.Column="0"  VerticalAlignment="Bottom" Height="215" Background="#FF44C76E"  >
+                    <Border x:Name="serialSettingBorder" BorderBrush="#FFC5BCBC" BorderThickness="1" Padding="2,2,2,2" Margin="0,0,5,160" Grid.Column="0"  VerticalAlignment="Bottom" Height="215" Background="#0044C76E"  >
 
                         <Grid >
                             <Grid.RowDefinitions>
@@ -145,7 +145,7 @@
                             <Ellipse x:Name="serialPortStatusEllipse" Fill="Gray" HorizontalAlignment="Left" Height="26" Margin="27,5,0,0" Grid.Row="5" Stroke="White" VerticalAlignment="Top" Width="26"/>
                         </Grid>
                     </Border>
-                    <Border x:Name="serialPortControlBorder" BorderBrush="#FFC5BCBC"  BorderThickness="1" Padding="2,2,2,2" Margin="0,0,5,1" Grid.Column="0" Height="154" VerticalAlignment="Bottom" Background="#FF44C76E" >
+                    <Border x:Name="serialPortControlBorder" BorderBrush="#FF000ACC"  BorderThickness="1" Padding="2,2,2,2" Margin="0,0,5,1" Grid.Column="0" Height="154" VerticalAlignment="Bottom" Background="#0044C76E" >
                         <Grid Height="151" VerticalAlignment="Top" Margin="-3,0,0,-3" >
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="14*"/>

@@ -492,26 +492,31 @@ namespace Qerials
              stopShowingButton.Content = "停止显示";
          }
 
-         //private void ChangeFileNameButton_Click(object sender, RoutedEventArgs e)
-         //{
-         //    if (receiveTextBox.Text == string.Empty)
-         //    {
-         //        MessageBox.Show("接收区为空，不保存！");
-         //    }
-         //    else 
-         //    {
-         //        OpenFileDialog selectFile = new OpenFileDialog();
-         //        selectFile.Filter = "TXT文本|*.txt";
+        private void FileNameTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
-         //        if (selectFile.ShowDialog() == true)
-         //        {
-         //            receiveFileNameTextBox.Text = selectFile.FileName;
-         //        }
-                
-         //    }
-         //}
+        }
+
+        //private void ChangeFileNameButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    if (receiveTextBox.Text == string.Empty)
+        //    {
+        //        MessageBox.Show("接收区为空，不保存！");
+        //    }
+        //    else 
+        //    {
+        //        OpenFileDialog selectFile = new OpenFileDialog();
+        //        selectFile.Filter = "TXT文本|*.txt";
+
+        //        if (selectFile.ShowDialog() == true)
+        //        {
+        //            receiveFileNameTextBox.Text = selectFile.FileName;
+        //        }
+
+        //    }
+        //}
 
 
-    
+
     }
 }
