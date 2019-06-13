@@ -281,9 +281,9 @@ Partial Class FormSerialPort
         Me.btnSendData3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnSendData3.BackColor = System.Drawing.SystemColors.Info
         Me.btnSendData3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnSendData3.Location = New System.Drawing.Point(765, 422)
+        Me.btnSendData3.Location = New System.Drawing.Point(765, 417)
         Me.btnSendData3.Name = "btnSendData3"
-        Me.btnSendData3.Size = New System.Drawing.Size(48, 30)
+        Me.btnSendData3.Size = New System.Drawing.Size(48, 42)
         Me.btnSendData3.TabIndex = 17
         Me.btnSendData3.Text = "发送3"
         Me.btnSendData3.UseVisualStyleBackColor = False
