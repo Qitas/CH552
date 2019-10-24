@@ -20,9 +20,6 @@
                 <MultiFunction:GPSMap></MultiFunction:GPSMap>
             </TabItem>
 
-            <TabItem Name="FourmItem" Header="辅助连接"  >
-                <MultiFunction:Fourm Loaded="Fourm_Loaded" ></MultiFunction:Fourm>
-            </TabItem>
             
             
         </TabControl>

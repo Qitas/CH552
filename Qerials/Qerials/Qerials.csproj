@@ -80,9 +80,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Links\Fourm.xaml.cs">
-      <DependentUpon>Fourm.xaml</DependentUpon>
-    </Compile>
     <Compile Include="GPS\GPSMap.xaml.cs">
       <DependentUpon>GPSMap.xaml</DependentUpon>
     </Compile>
@@ -92,10 +89,6 @@
     <Compile Include="Serial\SerialBasic.xaml.cs">
       <DependentUpon>SerialBasic.xaml</DependentUpon>
     </Compile>
-    <Page Include="Links\Fourm.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="GPS\GPSMap.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
