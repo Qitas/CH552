@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 
-namespace Qerials
+namespace Qitas
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
@@ -31,11 +31,11 @@ namespace Qerials
 
 
             if (functionTabControl.SelectedIndex == 2  )
-            { 
+            {
                 softWareMainWindow.Width = 1250;
                 softWareMainWindow.Height = 680;
 
-                //GPSItem.Content = new Qerials.SerialBasic(); 
+                //GPSItem.Content = new Qitas.SerialBasic();
 
 
 
@@ -45,7 +45,7 @@ namespace Qerials
                 softWareMainWindow.Width = 1250;
                 softWareMainWindow.Height = 680;
 
-                //FourmItem.Content = new Qerials.GPSMap();
+                //FourmItem.Content = new Qitas.GPSMap();
 
 
 

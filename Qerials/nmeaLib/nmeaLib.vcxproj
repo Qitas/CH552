@@ -43,7 +43,7 @@
     <OutDir>..\wildfire_MultiFuctionalSerial_assistant\bin\Release</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\Qerials\bin\Debug</OutDir>
+    <OutDir>..\Qitas\bin\Debug</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

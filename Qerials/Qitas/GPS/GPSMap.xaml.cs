@@ -26,7 +26,7 @@ using System.IO;
 using System.Diagnostics;
 
 
-namespace Qerials
+namespace Qitas
 {
     /// <summary>
     /// GPS_map.xaml 的交互逻辑
@@ -34,7 +34,7 @@ namespace Qerials
     public partial class GPSMap : UserControl
     {
         #region 引用nmeaLib
-           
+
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
         public struct nmeaPARSER
             {
@@ -119,7 +119,7 @@ namespace Qerials
 
         [DllImport("nmeaLib.dll", EntryPoint = "nmea_parse", CallingConvention = CallingConvention.Cdecl)]
         static extern int nmea_parse(ref nmeaPARSER parser, string buff, int buff_sz,ref nmeaINFO info);
-        
+
         [DllImport("nmeaLib.dll", EntryPoint = "GMTconvert", CallingConvention = CallingConvention.Cdecl)]
         static extern void GMTconvert(ref nmeaTIME SourceTime, ref nmeaTIME ConvertTime, int GMT, int AREA);
 
@@ -155,7 +155,7 @@ namespace Qerials
         #endregion
         public  GPSMap()
         {
-           
+
             InitializeComponent();
 
             //serialSettingBorder.IsEnabled = false;
@@ -201,7 +201,7 @@ namespace Qerials
                 foreach (string name in serialPortName)
                 {
                     if (serial.PortName == name)
-                        return;                 //找到，则返回，不操作               
+                        return;                 //找到，则返回，不操作
                 }
 
                 //若找不到已打开的串口:表示当前打开的串口已失效
@@ -278,7 +278,7 @@ namespace Qerials
 
 
 
- 
+
                 serialPortStatusEllipse.Fill = Brushes.Red;
 
                 gpsInfoTabControl.SelectedIndex = 1;
@@ -330,7 +330,7 @@ namespace Qerials
                 //显示提示文字
                 turnOnButton.Content = "打开串口";
 
-            
+
                 serialPortStatusEllipse.Fill = Brushes.Gray;
 
                 //使能发送面板
@@ -391,7 +391,7 @@ namespace Qerials
             {
                 MessageBox.Show(e.Message);
             }
-           
+
 
         }
 
@@ -557,7 +557,7 @@ namespace Qerials
             longitudeLabel.Content = Convert.ToString(DegreeConvert(gpsInfo.lon))+" E";
             //纬度
             latitudeLabel.Content = Convert.ToString(DegreeConvert(gpsInfo.lat))+" N";
-            
+
 
             elevatiionLabel.Content = Convert.ToString(gpsInfo.elv)+" 米";
             speedLabel.Content = Convert.ToString(gpsInfo.speed)+" km/h";
@@ -575,7 +575,7 @@ namespace Qerials
                     signalLevalLabel.Content = "差分GPS定位";
                     break;
                 default:
-                    break; 
+                    break;
             }
 
             switch (gpsInfo.fix)
@@ -611,8 +611,8 @@ namespace Qerials
 
                 }
             }
-        
-        
+
+
         }
 
         //对gps日志文件进行解码
@@ -637,7 +637,7 @@ namespace Qerials
 
                     UpdateInfo(ref gpsInfo);
 
-                }   
+                }
 
             }
             catch (Exception e)
@@ -645,19 +645,19 @@ namespace Qerials
                 MessageBox.Show(e.Message);
            }
 
-        
+
         }
 
 
         //供串口接收到数据后调用,对接收到的品数据进行解码
         private void NMEADecodeGPS(string gpsData)
         {
-         
+
             nmea_parse(ref gpsParser, gpsData, gpsData.Length, ref gpsInfo);
 
             UpdateInfo(ref gpsInfo);
-        
-        
+
+
         }
         #endregion
 
@@ -670,7 +670,7 @@ namespace Qerials
 
 
     }
-    
+
 }
 
 

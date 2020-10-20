@@ -20,7 +20,7 @@ using System.Text.RegularExpressions;
 using Microsoft.Win32;
 
 
-namespace Qerials
+namespace Qitas
 {
     /// <summary>
     /// GSMAssistant.xaml 的交互逻辑
@@ -91,7 +91,7 @@ namespace Qerials
         const string SIM900ACommand_ReDial = "ATDL\r\n";
         const string SIM900AReply_ReDial = "ATDL\r\n命令响应:\r\nATDL\r\nOK\r\n\r\n";
         const string SIM900ANote_ReDial = "命令说明：\r\n接听电话\r\n";
-        //发送短信        
+        //发送短信
         const string SIM900ACommand_SendMessageGSM = "AT+CSCS=\"GSM\"\r\n";
         const string SIM900ACommand_SendMessageCMGF = "AT+CMGF=1\r\n";
         const string SIM900ACommand_SendMessageCMGS = "AT+CMGS=";
@@ -170,7 +170,7 @@ namespace Qerials
                 foreach (string name in serialPortName)
                 {
                     if (serial.PortName == name)
-                        return;                 //找到，则返回，不操作               
+                        return;                 //找到，则返回，不操作
                 }
 
                 //若找不到已打开的串口:表示当前打开的串口已失效
@@ -457,7 +457,7 @@ namespace Qerials
                             }
                             catch
                             {
-                                //MessageBox.Show("字节越界，请逐个字节输入！", "Error");                          
+                                //MessageBox.Show("字节越界，请逐个字节输入！", "Error");
                             }
                         }
 
@@ -516,7 +516,7 @@ namespace Qerials
             //发送数据
             SerialPortSend(sendTextBox.Text, (bool)hexadecimalSendCheckBox.IsChecked);
 
-            //设置新的定时时间           
+            //设置新的定时时间
             // autoSendTimer.Interval = new TimeSpan(0, 0, 0, 0, Convert.ToInt32(autoSendCycleTextBox.Text));
 
         }
@@ -864,6 +864,6 @@ namespace Qerials
             commandNoteTextBlock.Text = SIM900ANote_sendTextBox;
 
         }
-         
+
     }
 }

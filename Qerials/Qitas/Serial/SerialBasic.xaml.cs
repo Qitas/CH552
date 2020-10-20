@@ -20,7 +20,7 @@ using System.Windows.Threading;
 using System.Text.RegularExpressions;
 using Microsoft.Win32;
 
-namespace Qerials
+namespace Qitas
 {
     /// <summary>
     /// SerialBasic.xaml 的交互逻辑
@@ -62,7 +62,7 @@ namespace Qerials
             statusTextBlock.Text = "准备就绪";
         }
 
-        
+
         #region 自动更新串口号
         //自动检测串口名
         private void GetValuablePortName()
@@ -72,23 +72,23 @@ namespace Qerials
 
             foreach (string name in serialPortName)
             {
-                portNamesCombobox.Items.Add(name);            
-            }        
+                portNamesCombobox.Items.Add(name);
+            }
         }
 
         //自动检测串口时间到
         private void AutoDectionTimer_Tick(object sender, EventArgs e)
         {
-            
+
             string[] serialPortName = System.IO.Ports.SerialPort.GetPortNames();
 
             if(turnOnButton.IsChecked == true)
-            { 
+            {
                 //在找到的有效串口号中遍历当前打开的串口号
                 foreach (string name in serialPortName)
                 {
                     if (serial.PortName == name)
-                        return;                 //找到，则返回，不操作               
+                        return;                 //找到，则返回，不操作
                 }
 
                 //若找不到已打开的串口:表示当前打开的串口已失效
@@ -118,7 +118,7 @@ namespace Qerials
                     statusTextBlock.Text = "串口列表已更新！";
 
                 }
-            }  
+            }
         }
         #endregion
 
@@ -151,30 +151,30 @@ namespace Qerials
 
                 //添加串口事件处理
                 serial.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(ReceiveData);
-                
+
                 //开启串口
                 serial.Open();
-                
+
                 //关闭串口配置面板
                 serialSettingControlState(false);
 
                 statusTextBlock.Text = "串口已开启";
-                
+
                 //显示提示文字
                 turnOnButton.Content = "关闭串口";
-                
+
                 serialPortStatusEllipse.Fill = Brushes.Red;
 
                 //使能发送面板
                // sendControlBorder.IsEnabled = true;
-               
+
 
             }
             catch
             {
                 statusTextBlock.Text = "配置串口出错！";
             }
-          
+
         }
 
 
@@ -200,11 +200,11 @@ namespace Qerials
                 //使能发送面板
                 //sendControlBorder.IsEnabled = false;
             }
-            catch 
-            {                
-                
+            catch
+            {
+
             }
-            
+
         }
 
         #endregion
@@ -223,20 +223,20 @@ namespace Qerials
         private void ShowData(string text)
         {
             string receiveText = text;
-            
+
             //更新接收字节数
             receiveBytesCount += (UInt32)receiveText.Length;
             statusReceiveByteTextBlock.Text = receiveBytesCount.ToString();
 
             //没有关闭数据显示
-            if(stopShowingButton.IsChecked == false)    
+            if(stopShowingButton.IsChecked == false)
             {
                 //字符串显示
                 if (hexadecimalDisplayCheckBox.IsChecked == false)
                 {
                     receiveTextBox.Text += receiveText;
-                   
-                }                                   
+
+                }
                 else //16进制显示
                 {
                     foreach (byte str in receiveText)
@@ -245,7 +245,7 @@ namespace Qerials
                     }
                 }
             }
-                
+
         }
 
         //设置滚动条显示到末尾
@@ -270,7 +270,7 @@ namespace Qerials
 
         #endregion
 
-     
+
 
         #region 接收设置面板
 
@@ -279,7 +279,7 @@ namespace Qerials
          {
             receiveTextBox.Clear();
          }
-        
+
 
         #endregion
 
@@ -288,7 +288,7 @@ namespace Qerials
 
         //发送数据
          private void SerialPortSend()
-         { 
+         {
              if(!serial.IsOpen)
              {
                  statusTextBlock.Text = "请先打开串口！";
@@ -321,19 +321,19 @@ namespace Qerials
                          int decNum = 0;
                          int i=0;
                          byte[] sendBuffer = new byte[strArray.Length];  //发送数据缓冲区
-                         
+
                          foreach (string str in strArray)
                          {
                              try
-                             {                             
+                             {
                                  decNum = Convert.ToInt16(str, 16);
                                  sendBuffer[i] = Convert.ToByte(decNum);
-                                 i++;                                
+                                 i++;
                               }
-                             catch 
+                             catch
                              {
-                                 //MessageBox.Show("字节越界，请逐个字节输入！", "Error");                          
-                             }                            
+                                 //MessageBox.Show("字节越界，请逐个字节输入！", "Error");
+                             }
                          }
 
                         serial.Write(sendBuffer,0,sendBuffer.Length);
@@ -349,15 +349,15 @@ namespace Qerials
                          statusTextBlock.Text = "当前为16进制发送模式，请输入16进制数据";
                          return;
                      }
-                   
+
                  }
-             
+
              }
-             catch 
+             catch
              {
-             
+
              }
-         
+
          }
 
         //手动发送数据
@@ -374,7 +374,7 @@ namespace Qerials
 
                  //设置定时时间，开启定时器
                  autoSendTimer.Interval =new TimeSpan(0,0,0,0, Convert.ToInt32(autoSendCycleTextBox.Text));
-                 autoSendTimer.Start();           
+                 autoSendTimer.Start();
          }
 
         //关闭自动发送定时器
@@ -390,7 +390,7 @@ namespace Qerials
              //发送数据
              SerialPortSend();
 
-             //设置新的定时时间           
+             //设置新的定时时间
              autoSendTimer.Interval = new TimeSpan(0, 0, 0, 0, Convert.ToInt32(autoSendCycleTextBox.Text));
 
          }
@@ -401,7 +401,7 @@ namespace Qerials
          }
          #endregion
 
-        
+
          private void SendTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
          {
              if (hexadecimalSendCheckBox.IsChecked == true)
@@ -411,7 +411,7 @@ namespace Qerials
                  foreach (Match mat in hexadecimalCollection)
                  {
 #if true
-                     sendTextBox.AppendText( mat.Value);                     
+                     sendTextBox.AppendText( mat.Value);
 #else
                      sendTextBox.Text += mat;
 #endif
@@ -455,7 +455,7 @@ namespace Qerials
                      File.AppendAllText(saveFile.FileName,"\r\n******"+DateTime.Now.ToString()+"******\r\n");
                      File.AppendAllText(saveFile.FileName, receiveTextBox.Text);
                      statusTextBlock.Text = "保存成功！";
-                    
+
                  }
 
 
@@ -503,7 +503,7 @@ namespace Qerials
         //    {
         //        MessageBox.Show("接收区为空，不保存！");
         //    }
-        //    else 
+        //    else
         //    {
         //        OpenFileDialog selectFile = new OpenFileDialog();
         //        selectFile.Filter = "TXT文本|*.txt";
